@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2e2e2e;
+    background-color: #ffffff;
+    animation: fadeBody 1s ease;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #e10600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #b50000;
+  }
+  
+  /* Contenu */
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Couleurs par page */
+  body.index main { background-color: #f4f4f4; }
+  body.produits main { background-color: #f0f8ff; }
+  body.reparations main { background-color: #fff8f0; }
+  body.transfert main { background-color: #f8f0ff; }
+  body.services main { background-color: #f0fff4; }
+  body.photos main { background-color: #fff0f8; }
+  body.contact main { background-color: #f0f0f0; }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeBody {
+    from { background-color: #ffffff; }
+    to { background-color: #ffffff; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  

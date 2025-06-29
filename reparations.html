@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Réparations - EASYMOBILE69</title>
+  <style>
+    :root {
+      --bleu: #002b5c;
+      --rouge: #e10600;
+      --blanc: #ffffff;
+      --gris: #f1f5f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gris);
+      color: var(--bleu);
+      animation: fadeIn 0.8s ease;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: linear-gradient(to right, var(--bleu), #004891);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 55px;
+      animation: rotateLogo 6s linear infinite;
+    }
+
+    .logo h1 {
+      color: var(--blanc);
+      font-size: 22px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      background-color: var(--rouge);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 18px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      background-color: #b00000;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .intro-text strong {
+      color: var(--rouge);
+    }
+
+    .repair-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 30px;
+    }
+
+    .repair-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+      text-align: center;
+    }
+
+    .repair-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    }
+
+    .repair-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .repair-card h3 {
+      color: var(--bleu);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .repair-card p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    footer {
+      background-color: var(--bleu);
+      color: var(--blanc);
+      text-align: center;
+      padding: 16px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes rotateLogo {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 600px) {
+      .logo h1 { font-size: 18px; }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/07d694f0-5fd7-4983-ac52-3676077b2502.png" alt="Logo EASYMOBILE69" />
+      <h1>EASYMOBILE69</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="reparations.html">Réparations</a></li>
+        <li><a href="transfert.html">Transfert</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nos Réparations</h2>
+    <section class="intro-text">
+      <p>
+        Chez <strong>EASYMOBILE69</strong>, on ne vend pas juste des téléphones, on leur donne une seconde vie.
+        Notre équipe répare vos smartphones, PC et tablettes avec rapidité, sérieux et garantie.
+        Que ce soit un écran brisé, une batterie fatiguée ou un bug incompréhensible, on s'en occupe.
+      </p>
+      <p>
+        🔧 Réparations express  · ✅ Devis clairs · 💬 Conseils pros
+      </p>
+    </section>
+
+    <div class="repair-grid">
+      <div class="repair-card">
+        <img src="images/ecran-smartphone-casse-e1653640184236.jpg" alt="Réparation écran téléphone" />
+        <h3>Écrans cassés</h3>
+        <p>Remplacement rapide d’écrans pour Samsung, iPhone, Xiaomi et plus.</p>
+      </div>
+      <div class="repair-card">
+        <img src="images/OIP.jpg" alt="Batterie smartphone" />
+        <h3>Changement de batterie</h3>
+        <p>Votre téléphone tient mal la charge ? On remplace la batterie en 1h.</p>
+      </div>
+      <div class="repair-card">
+        <img src="images/reparation-pc-a-Paris.jpg" alt="Réparation ordinateur portable" />
+        <h3>Réparation PC</h3>
+        <p>Nettoyage, optimisation, changement de disque dur, réinstallation Windows.</p>
+      </div>
+      <div class="repair-card">
+        <img src="images/Changement-du-connecteur-dalimentation-charge-sur-un-ordinateur-portable.-legaragedupc.fr-19.jpg" alt="Port de charge endommagé" />
+        <h3>Problème de charge</h3>
+        <p>On répare ou change les connecteurs de charge ou câbles abîmés.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EASYMOBILE69 – Réparations </p>
+  </footer>
+</body>
+</html>
+
+

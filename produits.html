@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produits - EASYMOBILE69</title>
+  <style>
+    :root {
+      --bleu: #002b5c;
+      --rouge: #e10600;
+      --blanc: #ffffff;
+      --fond: #f4faff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--fond);
+      color: var(--bleu);
+      animation: fadeIn 1s ease;
+    }
+
+    header {
+      background-color: var(--bleu);
+      color: var(--blanc);
+      padding: 25px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      background-color: var(--rouge);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #b80000;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .product-section {
+      margin-bottom: 60px;
+      animation: slideUp 1s ease;
+    }
+
+    .product-section h3 {
+      color: var(--bleu);
+      border-left: 5px solid var(--rouge);
+      padding-left: 12px;
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid var(--bleu);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 43, 92, 0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 8px 20px rgba(0, 43, 92, 0.3);
+    }
+
+    .product-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-card h4 {
+      font-size: 18px;
+      color: var(--bleu);
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    footer {
+      background-color: var(--bleu);
+      color: var(--blanc);
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EASYMOBILE69</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="reparations.html">Réparations</a></li>
+        <li><a href="transfert.html">Transfert</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nos Produits</h2>
+
+    <section class="product-section">
+      <h3>Téléphones</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/OIP (1).jpg" alt="Samsung Galaxy A12">
+          <h4>Samsung Galaxy </h4>
+          <p>Neufs</p>
+        </div>
+        <div class="product-card">
+          <img src="images/iphone-se-apple-1024x682.webp" alt="iPhone SE / iPhone 8">
+          <h4>iPhone SE / iPhone 8</h4>
+          <p>iOS fluide, idéal petit budget</p>
+        </div>
+        <div class="product-card">
+          <img src="images/5f0496be4962d.webp" alt="Redmi Note 10">
+          <h4>Redmi Note</h4>
+          <p>Rapport qualité/prix au top</p>
+        </div>
+        <div class="product-card">
+          <img src="images/200306-nokia-opengraph_1200-1.webp" alt="Nokia à touches">
+          <h4>Nokia / Téléphones à touches</h4>
+          <p>Appels & SMS simples</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <h3>Accessoires</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/ecouteurs-sans-fil-jbl-wave-beam-blanc.jpg" alt="Écouteurs">
+          <h4>Écouteurs filaires & Bluetooth</h4>
+          <p>Qualité audio, confort & autonomie</p>
+        </div>
+        <div class="product-card">
+          <img src="images/G_CNF_P49046615_B.avif" alt="Chargeurs">
+          <h4>Chargeurs & câbles USB-C / Lightning</h4>
+          <p>Compatibles Android & iPhone</p>
+        </div>
+        <div class="product-card">
+          <img src="images/ASSET_MP_137412282.webp" alt="Coques">
+          <h4>Coques de protection & vitres</h4>
+          <p>Design & protection assurée</p>
+        </div>
+        <div class="product-card">
+          <img src="images/tf_ranking_06.jpg" alt="Batteries externes">
+          <h4>Batteries externes</h4>
+          <p>Recharge ton tel n'importe où</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EASYMOBILE69</p>
+  </footer>
+</body>
+</html>

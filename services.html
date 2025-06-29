@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - EASYMOBILE69</title>
+  <style>
+    :root {
+      --bleu: #002b5c;
+      --rouge: #e10600;
+      --blanc: #ffffff;
+      --gris: #f4f7fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gris);
+      color: var(--bleu);
+      animation: fadeIn 0.6s ease;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: linear-gradient(to right, var(--bleu), #004891);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 55px;
+      animation: rotateLogo 6s linear infinite;
+    }
+
+    .logo h1 {
+      color: var(--blanc);
+      font-size: 22px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      background-color: var(--rouge);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 18px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      background-color: #b00000;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      color: var(--bleu);
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: var(--bleu);
+      color: var(--blanc);
+      text-align: center;
+      padding: 16px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes rotateLogo {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      .logo h1 { font-size: 18px; }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/07d694f0-5fd7-4983-ac52-3676077b2502.png" alt="Logo EASYMOBILE69" />
+      <h1>EASYMOBILE69</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="reparations.html">Réparations</a></li>
+        <li><a href="transfert.html">Transfert</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nos Services</h2>
+    <li>Chez EASYMOBILE69, on ne fait pas que vendre ou réparer des téléphones. On est là pour vous faciliter la vie. Du CV imprimé à la recharge de votre puce mobile, en passant par des photos d’identité prêtes en 5 minutes, on s’occupe de tout.
+      Besoin d’imprimer un document, scanner un papier, taper une lettre ou accéder à un PC ? Vous êtes au bon endroit. On vous accueille avec le sourire et un service rapide, efficace et pas cher.
+      
+      <br> Notre objectif ? Vous dépanner, vous faire gagner du temps, et vous proposer des solutions concrètes pour le quotidien. </li>
+
+    <div class="services-grid">
+      <div class="service-card">
+        
+        <h3>CV & Lettres de motivation</h3>
+        <p>Vous cherchez du travail ? On vous accompagne pour créer un CV clair, moderne et professionnel, ainsi que des lettres de motivation percutantes pour vous démarquer sur le marché.</p>
+      </div>
+      <div class="service-card">
+        
+        <h3>Impression / Photocopie / Scan</h3>
+        <p>Besoin d'imprimer un dossier, des documents officiels ou de faire une photocopie ? Nous offrons un service rapide et pas cher, avec qualité garantie. Scanner disponible aussi.</p>
+      </div>
+      <div class="service-card">
+       
+        <h3>Postes informatiques à disposition</h3>
+        <p>Accédez à nos ordinateurs pour naviguer sur internet, rédiger un document, consulter vos mails ou faire des démarches en ligne. Accès sécurisé avec assistance si besoin.</p>
+      </div>
+      <div class="service-card">
+        
+        <h3>Puces mobiles & Forfaits</h3>
+        <p>Nous proposons des cartes SIM de plusieurs opérateurs : Lycamobile, Lebara, Orange, SFR… Activation sur place, recharge, transfert de crédit et bons plans inclus !</p>
+      </div>
+      
+        
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EASYMOBILE69 – Tous vos services au même endroit</p>
+  </footer>
+</body>
+</html>
+
+

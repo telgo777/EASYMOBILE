@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos - EASYMOBILE69</title>
+  <style>
+    :root {
+      --bleu: #002b5c;
+      --rouge: #e10600;
+      --blanc: #ffffff;
+      --gris: #f4f7fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gris);
+      color: var(--bleu);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--bleu), #004891);
+      padding: 20px;
+      color: var(--blanc);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 50px;
+    }
+
+    .logo h1 {
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--blanc);
+      background-color: var(--rouge);
+      padding: 6px 14px;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .photo-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .photo-card .content {
+      padding: 20px;
+    }
+
+    .photo-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .photo-card p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    .photo-card .price {
+      margin-top: 12px;
+      font-size: 18px;
+      color: var(--rouge);
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--bleu);
+      color: var(--blanc);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/07d694f0-5fd7-4983-ac52-3676077b2502.png" alt="Logo">
+      <h1>EASYMOBILE69</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="reparations.html">Réparations</a></li>
+        <li><a href="transfert.html">Transfert</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Service Photo Cabine</h2>
+    <p class="intro">
+      Chez <strong>EASYMOBILE69</strong>, on vous prend en photos  <strong>valides et prêtes en 2 minutes</strong>.  
+      Carte d'identité, passeport, permis, carte vitale, titres de séjour...  
+      <br><br>
+      Choisissez votre modèle :
+    </p>
+
+    <div class="photos-grid">
+      <div class="photo-card">
+        <img src="images/photo-identite-lyon.jpg" alt="Photo classique">
+        <div class="content">
+          <h3>Modèle Classique</h3>
+          <p>Photos conformes aux normes officielles. Idéal pour documents administratifs, rapide et efficace.</p>
+          <div class="price">6 €</div>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="images/c.jpg" alt="Photo premium">
+        <div class="content">
+          <h3>Modèle Premium</h3>
+          <p>Photo cabine qualité studio, lumière optimisée, recadrage parfait avec code. Pour un rendu plus professionnel.</p>
+          <div class="price">8 €</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EASYMOBILE69 – Vos photos officielles en quelques minutes</p>
+  </footer>
+
+</body>
+</html>
+

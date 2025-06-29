@@ -1,0 +1,44 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - EASYMOBILE69</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: radial-gradient(circle, #f4f7fa, #dbe9ff); color: #002b5c; text-align: center; padding: 60px 20px; animation: fadeIn 1s ease forwards; }
+    h2 { font-size: 44px; margin-bottom: 30px; animation: bounce 1.5s infinite alternate; }
+    .contact-info { font-size: 22px; margin: 40px auto; line-height: 1.8; max-width: 700px; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,0.3); transform: scale(1); transition: transform 0.4s; }
+    .contact-info:hover { transform: scale(1.05); }
+    table { border-collapse: collapse; width: 100%; margin-top: 30px; animation: fadeIn 2s ease forwards; }
+    td, th { border: 2px solid #002b5c; padding: 16px; text-align: center; font-size: 20px; }
+    th { background: linear-gradient(90deg, #002b5c, #004891); color: white; }
+    button { background: #e10600; color: white; padding: 16px 32px; border: none; border-radius: 40px; cursor: pointer; margin-top: 40px; font-size: 20px; transition: all 0.4s; }
+    button:hover { transform: scale(1.1) rotate(2deg); background: #b00000; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+    .section { margin-top: 50px; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); animation: slideUp 1s ease forwards; }
+    .faq-item { margin-bottom: 20px; font-size: 20px; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { transform: translateY(60px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-10px); } }
+  </style>
+</head>
+<body>
+  <h2>Contactez-nous</h2>
+  <div class="contact-info">📞 04 72 94 69 07<br>✉️ direct.rapide@gmail.com<br>📍 9 rue Marseille, 69007 Lyon</div>
+  <h3>Horaires</h3>
+  <table>
+    <tr><th>Jour</th><th>Horaires</th></tr>
+    <tr><td>Lundi - Samedi</td><td>9h - 21h</td></tr>
+    <tr><td>Dimanche</td><td>11h - 21h</td></tr>
+  </table>
+  <button onclick="document.getElementById('faq-section').style.display = 'block'; this.style.display='none';">Afficher À propos & FAQ</button>
+  <div id="faq-section" style="display: none;">
+    <div class="section">
+      <h3>FAQ</h3>
+      <div class="faq-item">📦 Proposez-vous des garanties ? Non, pas de garantie.</div>
+      <div class="faq-item">⏱️ Délai moyen d'une réparation ? Environ 40 MIN selon le modèle.</div>
+      <div class="faq-item">💳 Paiement par carte ? Oui à partir de 10€.</div>
+      <div class="faq-item">📱 Vendez-vous des téléphones reconditionnés ? Oui.</div>
+      <div class="faq-item">📄 Imprimez-vous des documents ? Oui, tout format dispo.</div>
+    </div>
+  </div>
+</body>
+</html>
